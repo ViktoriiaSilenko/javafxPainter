@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<GridPane fx:id="ap" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="painter.PainterController">
+<children>
+
+    <BorderPane prefHeight="750.0" prefWidth="750.0" style="-fx-background-color: white;">
+        <center>
+            <HBox prefHeight="750.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+                <children>
+                    <Button onAction="#onChooseColor" prefHeight="26.0" prefWidth="126.0" text="Choose brash color" >
+                        <font>
+                            <Font name="System Bold" />
+                        </font>
+                    </Button>
+                    <Region prefWidth="5" maxWidth="5"/>
+
+                    <Button  prefHeight="26.0" prefWidth="26.0" disable="true"/>
+                    <Region prefWidth="50" maxWidth="50"/>
+
+                    <Label  text="Choose brush thickness:">
+                        <font>
+                            <Font name="System Bold" />
+                        </font>
+                    </Label>
+                    <Region prefWidth="20" maxWidth="20"/>
+
+                    <RadioButton fx:id="radioButtonThickness5" mnemonicParsing="false" prefWidth="10.0" text="5"/>
+                    <Region prefWidth="20" maxWidth="20"/>
+
+                    <RadioButton fx:id="radioButtonThickness10" mnemonicParsing="false" prefWidth="40.0" text="10"/>
+                    <Region prefWidth="20" maxWidth="20"/>
+
+                    <RadioButton fx:id="radioButtonThickness15" mnemonicParsing="false" prefWidth="40.0" text="15"/>
+                    <Region prefWidth="20" maxWidth="20"/>
+
+                    <RadioButton fx:id="radioButtonThickness20" mnemonicParsing="false" prefWidth="40.0" text="20"/>
+                    <Region prefWidth="50" maxWidth="50"/>
+
+                    <Button onAction="#onErase" prefHeight="26.0" prefWidth="100.0" text="Eraser">
+                        <font>
+                            <Font name="System Bold" />
+                        </font>
+                    </Button>
+                </children>
+
+            </HBox>
+        </center>
+    </BorderPane>
+</children>
+
+
+</GridPane>
